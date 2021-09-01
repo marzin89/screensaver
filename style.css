@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+#text {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+h1 {
+    font-size: 1em;
+}
+button {
+    width: 100%;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #text {
+        max-width: 500px;
+    }
+}
+@media only screen and (min-width: 769px) {
+    #text {
+        max-width: 600px;
+    }
+}

@@ -5,8 +5,6 @@ let colors = ['red', 'blue', 'green', 'pink', 'brown', 'yellow', 'purple', 'oran
 
 const button = document.querySelector('button');
 const body = document.querySelector('body');
-const run = setInterval(screensaver, 1000);
-button.addEventListener('click', run);
 
 function screensaver() {
     let randomWidth = Math.floor(Math.random() * 101);
@@ -26,3 +24,5 @@ function screensaver() {
     div.style.top = randomOffsetBottom + 'px';
     body.appendChild(div);
 }
+
+button.addEventListener('click', function() { setInterval(screensaver, 1000) });
